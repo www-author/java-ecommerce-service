@@ -53,9 +53,8 @@ public class Order {
             return LESS_THAN_3KG.getWeightUnitBilling();
         } else if (weight < 10) {
             return BETWEEN_3_AND_10KG.getWeightUnitBilling();
-        } else {
-            return MORE_THAN_10KG.getWeightUnitBilling();
         }
+        return MORE_THAN_10KG.getWeightUnitBilling();
     }
 
     public static BigDecimal getBillingByPrice(BigDecimal price, BigDecimal deliveryCharge) {
@@ -64,9 +63,8 @@ public class Order {
         } else if (price.compareTo(BigDecimal.valueOf(100000)) < 0) {
             BigDecimal discountPrice = BigDecimal.valueOf(1000);
             return deliveryCharge.subtract(discountPrice);
-        } else {
-            return BigDecimal.ZERO;
         }
+        return BigDecimal.ZERO;
     }
 
     public static BigDecimal calculateProductPrice(Stream<BigDecimal> productPrices) {
