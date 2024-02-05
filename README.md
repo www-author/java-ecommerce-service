@@ -43,3 +43,17 @@ public interface DeliveryChargeCalculator {
 ### 🔗 참고 자료 
 * BigDecomal 공식 자료 : https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
 * G-Market 공식 블로그 BigDecomal 가이드 : https://dev.gmarket.com/75
+
+## ♻️ 피드백 해줘 
+### 나 개발자 '박지은'이 봤을 때 아쉬운점 👩🏻‍💻 
+1. 컨트롤러에 비지니스 로직이 들어감
+
+     ```안되지만 하다보니 들어가 버린게 반성스럽습니다.;; 내가 그때 왜 그랬을까? ```
+
+2. 상수 클래스를 두었지만, 총 주문 결과 출력을 다른 곳에서 진행
+
+
+3. 잘못된 과제의 요구사항 설계를 무리하게 적용하고자 함
+
+### 멘토님의 피드백! 
+
