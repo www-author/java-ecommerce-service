@@ -41,10 +41,10 @@ public interface DeliveryChargeCalculator {
 }
 ```
 ### 🔗 참고 자료 
-* BigDecomal 공식 자료 
- : https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
-* G-Market 공식 블로그 BigDecomal 가이드
- : https://dev.gmarket.com/75
+* BigDecomal 공식 자료 <br>
+    * https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html 
+* G-Market 공식 블로그 BigDecomal 가이드 <br>
+  * https://dev.gmarket.com/75
 
 ## ♻️ 피드백 해줘 
 ### 나 개발자 '박지은'이 봤을 때 아쉬운점 👩🏻‍💻 
@@ -68,7 +68,7 @@ public interface DeliveryChargeCalculator {
 > * 기타 Order와 Cart 부분은 별도의 Service 로직으로 구성.
 
 **폴더 기능 통합**
-> * NumberValidaotr의 경우 Util에 통합하여 표기할 수도 있을 것으로 생각됨. <br>
+> * NumberValidator의 경우 Util에 통합하여 표기할 수도 있을 것으로 생각됨. <br>
 > * Console의 경우는 꼭 필요한지 여부를 확인하는게 좋을 것으로 생각됨(input View에서만 사용되고, 기본 API를 대부분 사용하므로)
 
 **흐름 및 Static 부분의 개선**
