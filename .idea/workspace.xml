@@ -24,7 +24,6 @@
       <change afterPath="$PROJECT_DIR$/src/com/ecommerce/product/Order.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/ecommerce/product/Product.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/ecommerce/utils/Console.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/ecommerce/validator/NumberValidator.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/ecommerce/view/InputView.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/com/ecommerce/view/OutputView.java" afterDir="false" />
     </list>
