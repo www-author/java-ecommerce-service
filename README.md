@@ -62,6 +62,21 @@ public interface DeliveryChargeCalculator {
 5. 정적 팩토리 메서드 패턴을 적용해보고 싶어서 어거지로 우겨넘
 
 ### 멘토님의 피드백! 
+**개선 희망 부분**
+> **비즈니스 로직의 분리(Service 부분)**
+> * 과제의 설계 요구상으로는 어쩔 수 없이 Product에서 DeliveryChargeCalculator를 구현해야 하기 때문에 이부분은 논외
+> * 기타 Order와 Cart 부분은 별도의 Service 로직으로 구성.
 
-... 
-작성 예정 
+**폴더 기능 통합**
+> * NumberValidaotr의 경우 Util에 통합하여 표기할 수도 있을 것으로 생각됨. <br>
+> * Console의 경우는 꼭 필요한지 여부를 확인하는게 좋을 것으로 생각됨(input View에서만 사용되고, 기본 API를 대부분 사용하므로)
+
+**흐름 및 Static 부분의 개선**
+> * Product의 경우 Static보다는 Data로 생각해보면 요청이 있을때 생성해서 보내주고, Cart에서는 해당 데이터를 보관하는 방식으로 사용해도 괜찮을 것 같습니다.<br>
+> * View에는 현재 판단이 되는 부분들은 Controller 또는 Cart에서 처리가 되면 좋을 것 같고 View에서는 사용자 입력에 따라서 Controller에서 앞으로 어떤 View를 표시해줄지만 들어가는 부분이 더 명확한 것 같습니다.
+
+**구조적인 개선(패턴의 적용 방법)**
+> * 일단 View 부분에서는 state패넡 같은 것으로 현재의 상태(입력값에 따라서) 주문단계, 추가주문단계, 출력단계 이런 식으로 표현하고 Input과 Output을 합쳐서 개선하는 것도 생각해볼 수 있을 것 같습니다.<br>
+> * Contorller에서 Cart로 전달하고 Cart에 입려된 내용을 기반으로 다시 Order에 전달하는 방식으로 Mediator또는 Stretegy 패턴등을 활용해 볼 수 있을 것 같습니다.<br>
+> * Product에는 Factory패턴 같을 적용할 수도 있을 것 같습니다.<br>
+> * 전체적인 관점에서는 추가적인 패턴이나 다른 방식을 고려해볼 수 있기 때문에 Sequence Diagram을 통해 전체적인 흐름에 대해서 한번 고민해보고 접근해보는 것도 좋을 것 같습니다.
