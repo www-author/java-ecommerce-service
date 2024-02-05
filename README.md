@@ -41,8 +41,10 @@ public interface DeliveryChargeCalculator {
 }
 ```
 ### 🔗 참고 자료 
-* BigDecomal 공식 자료 : https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
-* G-Market 공식 블로그 BigDecomal 가이드 : https://dev.gmarket.com/75
+* BigDecomal 공식 자료 
+ : https://docs.oracle.com/javase/8/docs/api/java/math/BigDecimal.html
+* G-Market 공식 블로그 BigDecomal 가이드
+ : https://dev.gmarket.com/75
 
 ## ♻️ 피드백 해줘 
 ### 나 개발자 '박지은'이 봤을 때 아쉬운점 👩🏻‍💻 
@@ -55,5 +57,9 @@ public interface DeliveryChargeCalculator {
 
 3. 잘못된 과제의 요구사항 설계를 무리하게 적용하고자 함
 
+4. 매직넘버가 아직 남아있다...! ```(반성하자 나 자신!)```
+
 ### 멘토님의 피드백! 
 
+... 
+작성 예정 
